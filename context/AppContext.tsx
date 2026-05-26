@@ -127,6 +127,9 @@ interface AppContextType {
   resolveComplaint: (id: number) => void;
 
   // Audit state
+  auditLogs: AuditLog[];
+  addAuditLog: (action: string, details: string) => void;
+
   // Mobile Menu
   isMobileMenuOpen: boolean;
   setMobileMenuOpen: (isOpen: boolean) => void;
